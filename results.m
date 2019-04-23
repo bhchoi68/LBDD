@@ -1,0 +1,43 @@
+figure(1)
+mesh(ini_V)
+xlabel('e_2')
+ylabel('e_1')
+zlabel('V(e_1,e_2)')
+title('Value Function')
+
+figure(2)
+mesh(ini_p)
+xlabel('e_2')
+ylabel('e_1')
+zlabel('p(e_1,e_2)')
+title('Policy Function')
+
+
+figure(3)
+mesh(dist10(1:30,1:30))
+xlabel('e_2')
+ylabel('e_1')
+zlabel('dist10')
+title('State distribution after 10 periods')
+
+
+figure(4)
+mesh(dist20(1:30,1:30))
+xlabel('e_2')
+ylabel('e_1')
+zlabel('dist20')
+title('State distribution after 20 periods')
+
+figure(5)
+mesh(dist30(1:30,1:30))
+xlabel('e_2')
+ylabel('e_1')
+zlabel('dist30')
+title('State distribution after 30 periods')
+
+figure(6)
+mesh(old_dist(1:30,1:30))
+xlabel('e_2')
+ylabel('e_1')
+zlabel('dist')
+title('Stationary state distribution')
